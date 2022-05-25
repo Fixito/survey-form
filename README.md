@@ -14,7 +14,7 @@
 
 6. Si on entre un format d'email incorrect, on verra une erreur HTML5 de validation
 
-7. Dans le formulaire, on peut entrer u nombre dans un <input> qui a un id="number"
+7. Dans le formulaire, on peut entrer un nombre dans un <input> qui a un id="number"
 
 8. Si on entre autre chose qu'un nombre dans l'<input> number, on verra une erreur HTML5 de validation
 
@@ -28,7 +28,7 @@
 
 13. Dans l'élément <form>, on peut sélectionner dans un groupe d'au moins deux boutons radio groupés avec un attribut name
 
-14. Dans l'élément <form>,on peut sélectionner plusieurs champs dnas un série de checkboxes, chacune ayant un attribut value
+14. Dans l'élément <form>,on peut sélectionner plusieurs champs dans un série de checkboxes, chacune ayant un attribut value
 
 15. Dans l'élément <form>, on peut voir un élément <textarea> pour des commentaires additionnels
 

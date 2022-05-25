@@ -10,5 +10,121 @@
     <!-- styles -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+      <h1 id="title">sondage AFCI</h1>
+    </div>
+    <p id="description">
+      merci de prendre le temps pour nous aider à améliorer la formation DWWM
+    </p>
+    <form action="#" id="survey-form">
+      <!-- name input -->
+      <div class="form-row">
+        <label for="name" id="name-label">nom</label>
+        <input
+          type="text"
+          id="name"
+          class="form-input"
+          placeholder="Entrez votre nom"
+          required
+        />
+      </div>
+      <!-- end of name input -->
+      <!-- email input -->
+      <div class="form-row">
+        <label for="email" id="email-label">email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          placeholder="Entrez votre email"
+          required
+        />
+      </div>
+      <!-- end of email input -->
+      <!-- age input -->
+      <div class="form-row">
+        <label for="number" id="number-label"
+          >age <span class="text-small">(facultatif)</span>
+        </label>
+        <input
+          type="number"
+          id="number"
+          min="10"
+          max="99"
+          class="form-input"
+          placeholder="Age"
+        />
+      </div>
+      <!-- end of age input -->
+      <!-- level input -->
+      <div class="form-row">
+        <p class="form-label">Quel est votre niveau de connaissance en web ?</p>
+        <select name="level" id="dropdown" class="form-input">
+          <option value="beginner">débutant</option>
+          <option value="intermediate">intermédiaire</option>
+          <option value="expert">expert</option>
+        </select>
+      </div>
+      <!-- level input -->
+      <!-- recommend input -->
+      <div class="form-row">
+        <p class="form-label">recommendriez la formation DWWM ?</p>
+        <label class="form-label">
+          <input type="radio" name="recommendation" value="yes" />oui
+        </label>
+        <label class="form-label">
+          <input type="radio" name="recommendation" value="maybe" />peut-être
+        </label>
+        <label class="form-label">
+          <input type="radio" name="recommendation" value="no" />non
+        </label>
+      </div>
+      <!-- end of recommend input -->
+      <!-- prefer input -->
+      <div class="form-row">
+        <p class="form-label">
+          que souhaiteriez-vous voir amélioré ?
+          <span class="text-small">(oplusieurs choix possibles)</span>
+        </p>
+        <label class="form-label">
+          <input
+            type="checkbox"
+            name="prefer"
+            value="front-end-projects"
+          />projets front-end
+        </label>
+        <label class="form-label">
+          <input
+            type="checkbox"
+            name="prefer"
+            value="back-end-projects"
+          />projets back-end
+        </label>
+        <label class="form-label">
+          <input type="checkbox" name="prefer" value="course" />cours
+        </label>
+        <label class="form-label">
+          <input type="checkbox" name="prefer" value="exercices" />exercices
+        </label>
+        <label class="form-label">
+          <input type="checkbox" name="prefer" value="supports" />supports
+        </label>
+        <!-- prefer input -->
+        <!-- comment area -->
+        <p class="form-label">commentaires ou suggestions ?</p>
+      </div>
+      <div class="form-row">
+        <textarea
+          name="comments"
+          cols="30"
+          rows="10"
+          class="form-textarea"
+          placeholder="Entrez votre commentaire..."
+        ></textarea>
+      </div>
+      <!-- end of comment area -->
+      <button id="submit" class="btn btn-block">envoyer</button>
+    </form>
+  </body>
 </html>
